@@ -10,4 +10,16 @@ db.playercharacters.insertOne({
   skill_3: 2
 })
 
-//
+// armas ativas no jogo atual
+db.items.find(
+  {
+    "buff.type": "damage",
+    active: true
+  },
+  {
+    _id: 0,
+    name: 1,
+    price: 1,
+    buff: 1
+  }
+)
