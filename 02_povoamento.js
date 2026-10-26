@@ -1012,7 +1012,7 @@ db.playerquests.insertMany([
 ])
 
 // VERIFICACAO
-db.users.countDocuments({})
+db.users.countDocuments({}) / db.users.find({}, { password: 0 }).limit(2)
 db.saves.countDocuments({})
 db.characters.countDocuments({})
 db.playercharacters.countDocuments({})
