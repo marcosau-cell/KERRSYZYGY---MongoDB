@@ -1,4 +1,3 @@
-
 // 01. Analisar o desempenho da busca por artefatos com bonus de dano.
 db.items.find({
   "buff.type": "damage"
